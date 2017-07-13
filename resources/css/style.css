@@ -3,7 +3,6 @@
 * {
   background-color: black;
   font-family: Helvetica;
-  font-size: 22px;
   color: seashell;
   opacity: 0.9;
   text-align: center;
@@ -17,8 +16,11 @@ header {
   align-items: center;
   display: flex;
   height: 69px;
-  width: 100%;
+  width: 99%;
   border-bottom: 1px solid seashell;
+  font-size: 22px;
+  margin: 0 auto;
+
 }
 
 #logo {
@@ -30,3 +32,36 @@ header .h-links {
 }
 
 /* Jumbotron */
+
+.jumbotron {
+  background-image: url("../media/images/img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 70px;
+  margin: 0 auto;
+}
+
+.jumbotron .mission-label {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  opacity: 1;
+}
+
+.jumbotron .mission-label h2 {
+  font-size: 30px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.jumbotron .mission-label h4 {
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
