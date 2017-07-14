@@ -12,14 +12,16 @@
 
 header {
   position: fixed;
+  top: 0;
   justify-content: space-between;
   align-items: center;
   display: flex;
   height: 69px;
-  width: 99%;
+  width: 100%;
   border-bottom: 1px solid seashell;
   font-size: 22px;
-  margin: 0 auto;
+  z-index: 10;
+  opacity: 1;
 
 }
 
@@ -40,7 +42,7 @@ header .h-links {
   display: flex;
   align-items: center;
   position: relative;
-  top: 70px;
+  top: 62px;
   margin: 0 auto;
 }
 
@@ -53,7 +55,8 @@ header .h-links {
   opacity: 1;
 }
 
-.jumbotron .mission-label h2 {
+.jumbotron .mission-label h2,
+.top-teas h2 {
   font-size: 30px;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -65,3 +68,65 @@ header .h-links {
   margin-bottom: 5px;
   font-weight: bold;
 }
+
+/* Tea of the Month Section */
+
+.top-teas {
+  position: relative;
+  top: 150px;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-teas .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.container .row {
+  width: 1000px;
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .row .item {
+  position: relative;
+  background-size: contain;
+  height: 200px;
+  width: 300px;
+  margin: 0 20px;
+}
+
+.container .row h4 {
+  padding: 10px 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+/*
+#blitz {
+  background-image: url("../media/images/img-berryblitz.jpg");
+}
+
+#rum {
+  background-image: url("../media/images/img-spiced-rum.jpg");
+}
+
+#donuts {
+  background-image: url("../media/images/img-donut.jpg");
+}
+
+#myrtle {
+  background-image: url("../media/images/img-myrtle-ave.jpg");
+}
+
+#bizzare {
+  background-image: url("../media/images/img-bedford-bizarre.jpg");
+}
+*/
