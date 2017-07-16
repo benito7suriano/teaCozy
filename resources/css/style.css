@@ -1,4 +1,4 @@
-/* Universal Styles */
+/* Body Styles */
 
 body {
   background-color: black;
@@ -75,6 +75,11 @@ header .h-links a {
 }
 
 /* Tea of the Month Section */
+
+#featured-teas {
+  position: absolute;
+  top: 640px;
+}
 
 .top-teas {
   position: relative;
