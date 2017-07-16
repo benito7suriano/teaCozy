@@ -1,6 +1,6 @@
 /* Universal Styles */
 
-* {
+body {
   background-color: black;
   font-family: Helvetica;
   color: seashell;
@@ -13,11 +13,12 @@
 header {
   position: fixed;
   top: 0;
+  height: 69px;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   display: flex;
-  height: 69px;
-  width: 100%;
+  background-color: black;
   border-bottom: 1px solid seashell;
   font-size: 22px;
   z-index: 10;
@@ -31,6 +32,10 @@ header {
 
 header .h-links {
   margin: 0 10px;
+}
+
+header .h-links a {
+  color: seashell;
 }
 
 /* Jumbotron */
@@ -86,6 +91,10 @@ header .h-links {
   align-items: center;
   position: relative;
 }
+.top-teas h5 {
+  font-size: 18px;
+  margin: 5px;
+}
 
 .container .row {
   width: 1000px;
@@ -109,24 +118,81 @@ header .h-links {
   margin: 0 auto;
 }
 
-/*
-#blitz {
-  background-image: url("../media/images/img-berryblitz.jpg");
+/* Locations Section */
+
+.locations {
+  width: 1200px;
+  height: 500px;
+  position: relative;
+  top: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../media/images/img-locations-background.jpg);
+  background-size: 1200px 700px;
+  background-repeat: no-repeat;
 }
 
-#rum {
-  background-image: url("../media/images/img-spiced-rum.jpg");
+.locations h2 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+  font-size: 30px;
 }
 
-#donuts {
-  background-image: url("../media/images/img-donut.jpg");
+.box h3 {
+  font-size: 20px;
+  margin: 5px auto;
 }
 
-#myrtle {
-  background-image: url("../media/images/img-myrtle-ave.jpg");
+.box p {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 5px auto;
 }
 
-#bizzare {
-  background-image: url("../media/images/img-bedford-bizarre.jpg");
+.locations .container {
+  display: flex;
+  align-items: center;
 }
-*/
+
+.container .box {
+  height: 250px;
+  width: 300px;
+  margin: 0 20px;
+  opacity: 1;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Footer Section */
+
+footer {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 200px;
+}
+
+footer h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+footer h5 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+
+}
+
+.copyright {
+  text-align: left;
+  font-weight: bold;
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
